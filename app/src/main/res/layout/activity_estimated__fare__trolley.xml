@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimated Fare"
+            android:layout_marginLeft="65dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/txt_fare_trolley"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="120 Rs"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="18dp"
+            android:layout_marginTop="16dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/fare_confirm_trolley_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:layout_weight="1"
+                android:layout_marginRight="18dp"
+                android:onClick="On_confirm_trolley_fare"
+                android:padding="18dp"
+                />
+            <Button
+                android:id="@+id/fare_cancel_trolley_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:onClick="On_cancel_cancel_fare"
+                android:layout_marginLeft="18dp"
+                android:padding="18dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

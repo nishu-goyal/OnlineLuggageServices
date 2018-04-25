@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OnlineCoolieSystem</string>
+    <string name="coolie">Coolie</string>
+    <string name="trolley">Trolley</string>
+
+    <string-array name="City_Array">
+        <item>Hyderabad</item>
+        <item>Banglore</item>
+        <item>Chennai</item>
+    </string-array>
+
+    <string-array name="Station_Name_Array">
+        <item>Hyderabad Deccan railway station</item>
+        <item>Whitefield Railway Station(Banglore)</item>
+        <item>Bangalore City Railway Station</item>
+        <item>Chennai Central Railway Station</item>
+        <item>Chennai Egmore Railway Station</item>
+        <item>Chennai Beach Railway Station</item>
+        <item>Tambram Railway Station(Chennai)</item>
+    </string-array>
+
+    <string-array name="Number_Of_Luggage">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="Location_array">
+        <item>Front Gate</item>
+        <item>Back Gate</item>
+    </string-array>
+
+    <string-array name="coming_going_array">
+        <item>Coming From</item>
+        <item>Going To</item>
+    </string-array>
+
+    <string-array name="Luggage_Dim">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

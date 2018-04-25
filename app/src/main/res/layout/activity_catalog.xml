@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="android.onlinecooliesystem.Catalog">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="City :"
+            android:padding="16dp"/>
+
+        <Spinner
+            android:id="@+id/City_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="18dp"
+            android:padding="16dp"
+            android:entries="@array/City_Array"
+            android:backgroundTint="@color/colorPrimary"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:textColorHint="#05ab9a"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Station Name :"
+            android:padding="16dp"/>
+
+        <Spinner
+            android:id="@+id/Station_name_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="18dp"
+            android:padding="16dp"
+            android:entries="@array/Station_Name_Array"
+            android:backgroundTint="@color/colorPrimary"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:textColorHint="#05ab9a"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:text="Select Which Service You Want :"
+            android:padding="16dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/Coolie_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/coolie"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_horizontal"
+                android:onClick="onRadioButtonClicked"
+                android:layout_margin="16dp"/>
+
+            <RadioButton
+                android:id="@+id/Trolley_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trolley"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:onClick="onRadioButtonClicked"
+                android:layout_margin="16dp"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="next"
+            android:padding="16dp"
+            android:layout_gravity="end"
+            android:onClick="nextCatalog"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

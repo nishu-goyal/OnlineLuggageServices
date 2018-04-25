@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoolieLogIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="18dp">
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:errorEnabled="true"
+            >
+
+            <EditText
+                android:id="@+id/Clogin_userid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="User ID"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            >
+
+            <EditText
+                android:id="@+id/Clogin_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="User Name"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/Clogin_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="password"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="18sp">
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Log In"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:layout_margin="16dp"
+                android:onClick="Clogin_button"
+                />
+
+            <Button
+                android:id="@+id/login_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:padding="16dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20sp"
+                android:onClick="Clogin_cancel_btn"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

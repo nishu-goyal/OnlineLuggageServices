@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Passenger_info"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txt_coolie_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nishu Goyal"
+        android:textSize="18dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="36dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:paddingLeft="22dp"
+        android:paddingTop="36dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Phone Number :"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:paddingBottom="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"/>
+        <TextView
+            android:id="@+id/txt_phn-nmbr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="8699302361"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:paddingBottom="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:paddingLeft="22dp"
+        android:paddingTop="16dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Number Of Bags:"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:paddingBottom="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"/>
+        <TextView
+            android:id="@+id/txt_nmbr_of_bags"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            android:paddingBottom="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:paddingLeft="22dp"
+        android:paddingTop="16dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Location :"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:paddingBottom="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"/>
+        <TextView
+            android:id="@+id/txt_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Back gate"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            android:paddingBottom="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:paddingLeft="22dp"
+        android:paddingTop="16dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:paddingBottom="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"/>
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="225"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            android:paddingBottom="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:paddingLeft="22dp"
+        android:paddingTop="16dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Weight :"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:paddingBottom="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"/>
+        <TextView
+            android:id="@+id/txt_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="45(In KG)"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            android:paddingBottom="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="18sp">
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Done"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:onClick="Done_button"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

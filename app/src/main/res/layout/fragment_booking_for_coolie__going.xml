@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="18dp">
+        <EditText
+            android:id="@+id/txt_going_train_nmbr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Train Number"
+            android:inputType="number"
+            android:padding="16dp"/>
+        <EditText
+            android:id="@+id/txt_going_platform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Platform Number"
+            android:padding="16dp"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Number Of Luggage"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentLeft="true"
+            android:textColorHint="@color/colorAccent"
+            android:padding="18dp"
+            android:layout_marginTop="18dp"
+            />
+
+        <Spinner
+            android:id="@+id/spin_going_number_luggage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="18dp"
+            android:entries="@array/Number_Of_Luggage"></Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Average Weight Of Luggage"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentLeft="true"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginTop="18dp"
+            android:padding="18dp"
+            />
+
+        <EditText
+            android:id="@+id/txt_going_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="10 ( in KG's )"
+            android:padding="18dp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Location"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentLeft="true"
+            android:textColorHint="@color/colorAccent"
+            android:padding="18dp"
+            android:layout_marginTop="18dp"
+            />
+
+        <Spinner
+            android:id="@+id/spin_going_loc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="18dp"
+            android:entries="@array/Location_array"
+            android:backgroundTint="@color/colorPrimary"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:textColorHint="#05ab9a"
+            ></Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="18dp"
+            android:layout_marginTop="18dp">
+            <Button
+                android:id="@+id/going_confirm_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                />
+            <Button
+                android:id="@+id/going_cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
